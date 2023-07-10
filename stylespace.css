@@ -1,0 +1,353 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.space{
+	width: 100%;
+	height: 100vh;
+	background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+	 url("https://images.unsplash.com/photo-1631679706909-1844bbd07221?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bGl2aW5nJTIwcm9vbXxlbnwwfHwwfHw%3D&w=1000&q=80");
+	background-size: cover;
+	background-position: center;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+nav{
+	width: 85%;
+	margin:auto;
+	padding:35px 0;
+	display:flex;
+	align-items: center;
+	justify-content:space-between ;
+}
+.logo {
+	width: 40px;
+	cursor: pointer;
+}
+
+.navbar ul li{
+	 list-style: none;
+	 display: inline-block;
+	 margin:0 20px;
+	 position:relative ;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color:#fff;
+}
+
+.navbar ul li::after{
+	content: "";
+	height: 3px;
+	width:0;
+	background:#009688;
+	position:absolute;
+	 left:0;
+	 bottom:-10px;
+	 transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after{
+	width:100%;
+}
+
+.content{
+	width:100%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	text-align:center;
+	color:#fff;
+}
+
+.content h1{
+	font-size: 70px;
+	margin-top: 80px;
+}
+
+.content p{
+	margin:20px auto;
+	font-weight:100;
+	line-height: 25px;
+}
+nav .fa{
+	display:none;
+}
+/*---- for small device ----*/
+@media screen and (max-width:600px){
+	.content h1{
+		font-size: 36px;
+		line-height: 50px;
+	}
+    
+.navbar ul li{
+	display: block;
+	padding:15px;
+	padding-left: 35px;
+	text-transform: uppercase;
+}
+.navbar  {
+	position: absolute;
+	background: skyblue;
+	height: 100vh;
+	width:200px;
+	top:0;
+	right:-200px;
+	text-align:left;
+	z-index: 2;
+	transition: 1s;
+}
+nav .fa {
+	display: block;
+	color: #fff;
+	margin:10px;
+	font-size: 22px;
+	cursor: pointer;
+}
+
+}
+
+/* --------------------------------- bedroom -------------------------------------------*/
+.bedroom{
+	width:95%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}
+
+h1{
+	font-size:36px;
+	font-weight:600;
+}
+#C{
+	color:#777;
+	font-size:14px;
+	font-weight:300;
+	line-height:22px;
+	padding:10px;
+}
+
+.row{
+	display:flex;
+}
+
+.column{
+	flex-basis:33.33%;
+	padding:5px;
+	position:relative;
+	overflow: hidden;
+}
+.row .column:hover img{
+	transform: scale(1.2);
+}
+
+.column img:hover{
+   opacity: 0.5;
+}
+/*---- for small device ----*/
+@media screen and (max-width:600px){
+	.row{
+		flex-direction: column;
+	}
+}
+
+
+/* ------------------------------------ Dining Room ------------------------------------------ */
+.dining{
+	width:95%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}
+
+
+
+.row1{
+	display: inline-block;
+
+}
+
+.column1{
+	display:block;
+	padding:5px;
+	position:relative;
+	overflow: hidden;
+}
+
+.row1 .column1:hover img{
+	transform: scale(1.2);
+}
+ 
+
+/*---- for small device ----*/
+
+@media screen and (max-width:600px){
+	.row1{
+	width:100%;
+	float:none;
+	position: relative;
+
+}
+}
+
+/* ------------------------------------ Kitchen ------------------------------------------ */
+.kitchen{
+	width:95%;
+	margin:auto;
+	text-align:center;
+	padding-top:100px;
+}
+
+.roww{
+	width: 100%;
+	display: flex;
+}
+
+.columnn1{
+	width:25%;	
+}
+
+.columnn2{
+	width:50%;
+}
+
+.columnn1 .column1:hover img{
+	transform: scale(1.2);
+}
+.columnn2 .column1:hover img{
+	transform: scale(1.2);
+}
+
+#quotes{
+	padding-top: 25px;
+	background-color: lightskyblue;
+	padding-bottom: 21px;
+	color:#777;
+}
+
+/*---- for small device ----*/
+@media screen and (max-width:600px){
+	.roww{
+		
+		flex-direction: column;
+	}
+
+	.columnn1, .columnn2{
+		width:100%;
+	}
+}
+
+
+/* -------------------------------------- Contact---------------------------------------------------- */
+.contact{
+	width:80%;
+	margin:auto;	
+   }
+
+.form{
+	width: 100%;
+	display: flex;
+	 margin-top:20px ;
+	 margin-bottom: 30px;
+}
+
+.container1{
+	width: 50%;
+   padding-top:100px;
+	padding-bottom:100px;
+	 background:#FBEA4C;
+	
+}
+
+.container2{
+	width:50%;
+}
+
+.login{
+	padding-left: 30px;
+}
+label{
+	font-size: 20px;
+	font-weight: 200;
+}
+#fill{
+	font-size: 15px;
+	font-weight: 150;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom: 10px;
+}
+
+#submit{
+	font-size: 15px;
+	font-weight: 150;
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: darkgreen;
+	color: yellow;
+}
+input{
+	border-radius: 3px;
+}
+/*---- for small device ----*/
+@media screen and (max-width:600px){
+	.form{
+		
+		flex-direction: column;
+	}
+
+	.container1, .container2{
+		width:100%;
+	}
+}
+
+
+/* -------------------------------------- Footer ---------------------------------------------------- */
+.footer{
+    width: 95%;  
+    margin:auto;
+	padding-top:100px;
+	padding-bottom:100px;
+    background-color: black;  
+    color: white;   
+    text-align: center; 
+}
+
+.footer .Foot{
+	padding: 1rem 0;
+
+}
+
+.footer .Foot a{
+	height:5rem;
+	width:5rem;
+	line-height:5rem;
+	font-size:2rem;
+	color:#fff;
+	border:.1rem solid rgba(255,255,255,.3);
+	margin:.3rem;
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+.footer .Foot a:hover{
+	background-color: #fff;
+	color: black;
+}
+
+@media screen and (max-width:600px){
+	
+  .footer .Foot a{
+	height:3rem;
+	width:3rem;
+		line-height:3rem;
+		font-size:1.5rem;
+}
+}
+
