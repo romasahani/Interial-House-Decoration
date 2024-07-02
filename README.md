@@ -29,4 +29,7 @@ This website have following pages:
 
 ![Screenshot 2024-07-02 191356](https://github.com/romasahani/Interial-House-Decoration/assets/121279220/4b9a3bed-78f9-433e-bdcc-83aa944a4b4d)
 
-![Uploading Screenshot 2024-07-02 195119.png…]()
+![Screenshot 2024-07-02 195119](https://github.com/romasahani/Interial-House-Decoration/assets/121279220/59a1f3c2-b9fe-4675-9007-92b8fb02c8c9)
+
+
+
